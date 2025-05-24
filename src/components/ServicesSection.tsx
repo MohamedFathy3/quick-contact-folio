@@ -9,11 +9,7 @@ const ServicesSection = () => {
       title: "Web Development",
       description: "Creating responsive and modern web applications using the latest technologies and frameworks."
     },
-    {
-      icon: Smartphone,
-      title: "Mobile Development",
-      description: "Building cross-platform mobile applications that provide seamless user experiences."
-    },
+   
     {
       icon: Database,
       title: "Backend Development",

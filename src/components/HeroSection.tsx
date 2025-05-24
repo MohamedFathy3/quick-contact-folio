@@ -6,7 +6,7 @@ const HeroSection = () => {
   const handleDownloadCV = () => {
     // Create a dummy CV download - replace with actual CV file
     const link = document.createElement('a');
-    link.href = '#'; // Replace with actual CV file path
+    link.href = '/pro.pdf'; // Replace with actual CV file path
     link.download = 'Your_Name_CV.pdf';
     link.click();
   };
@@ -21,7 +21,7 @@ const HeroSection = () => {
               <h1 className="text-5xl md:text-7xl font-bold text-gray-800 leading-tight">
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent animate-pulse">
-                  Your Name
+                  Mohamed Fathy
                 </span>
               </h1>
               <p className="text-2xl md:text-3xl text-gray-600 font-light">
@@ -43,35 +43,24 @@ const HeroSection = () => {
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
-              <Button 
-                variant="outline" 
-                className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                Let's Talk
-              </Button>
+           
             </div>
 
             {/* Social Links */}
             <div className="flex gap-6 justify-center lg:justify-start">
               <a 
-                href="#" 
+                href="https://github.com/MohamedFathy3" 
                 className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl hover:scale-110 transition-all duration-300 group"
               >
                 <Github className="h-6 w-6 text-gray-700 group-hover:text-purple-600" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/mohamed-fathy-4653702a4/" 
                 className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl hover:scale-110 transition-all duration-300 group"
               >
                 <Linkedin className="h-6 w-6 text-gray-700 group-hover:text-blue-600" />
               </a>
-              <a 
-                href="#" 
-                className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl hover:scale-110 transition-all duration-300 group"
-              >
-                <Mail className="h-6 w-6 text-gray-700 group-hover:text-green-600" />
-              </a>
+             
             </div>
           </div>
 
@@ -85,12 +74,9 @@ const HeroSection = () => {
               {/* Profile Image Container */}
               <div className="relative w-80 h-80 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full p-2 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
                 <div className="w-full h-full bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
-                  {/* Placeholder for profile image */}
-                  <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 rounded-full flex items-center justify-center">
-                    <span className="text-6xl font-bold text-white">YN</span>
-                  </div>
-                  {/* Replace the div above with actual image when available */}
-                  {/* <img src="/path-to-your-image.jpg" alt="Your Name" className="w-full h-full object-cover rounded-full" /> */}
+              
+                  
+                   <img src="/logo.jpeg" alt="Your Name" className="w-full h-full object-content rounded-full" /> 
                 </div>
               </div>
 

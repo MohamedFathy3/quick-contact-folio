@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Your Name
+              mohamed
             </h1>
           </div>
 

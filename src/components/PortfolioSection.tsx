@@ -6,53 +6,39 @@ import { Button } from "@/components/ui/button";
 const PortfolioSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop",
+title: "Motivational Platform for Students",
+description: "An inspiring platform designed to help Fa3el students achieve academic excellence through daily motivation, study plans, and personal growth tracking.",      image: "/auto.png",
       tags: ["Vue.js", "Express", "Socket.io", "PostgreSQL"],
+    
+    },
+    {
+title: "Collaborative Productivity & Task Management Tool",
+description: "A powerful and intuitive task management app designed for seamless team collaboration. Features include real-time updates, drag-and-drop task organization, and smart project tracking."
+,      image: "/a2z.png",
+      tags: ["bootstrap ", "DJANGO", "mysql", "Stripe"],
       liveUrl: "#",
       githubUrl: "#"
     },
-    {
-      title: "AI-Powered Dashboard",
-      description: "An analytics dashboard with AI-driven insights, interactive charts, and real-time data visualization for business intelligence.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
-      tags: ["Python", "React", "TensorFlow", "D3.js"],
+   {
+title: "Smart WhatsApp Automation & Chat Management Tool",
+
+description: "An intuitive WhatsApp management platform that allows you to create and control bots, handle customer conversations, and automate workflows in real time."
+,      image: "/ath.png",
+      tags: ["laravel ", "bootstrap", "mysql", "Stripe"],
       liveUrl: "#",
       githubUrl: "#"
-    },
+    
+   },
     {
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric authentication, transaction history, and budget tracking features.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
-      tags: ["React Native", "Firebase", "Redux", "Stripe"],
+title: "On-Demand Delivery and Transportation App",
+
+description: "An intuitive delivery and ride-hailing app that connects users with nearby drivers. Includes real-time tracking, route optimization, and seamless payment integration."
+,      image: "/darp.png",
+      tags: ["php ",'CodeIgniter', "bootstrap", "mysql", "Stripe"],
       liveUrl: "#",
       githubUrl: "#"
-    },
-    {
-      title: "Learning Management System",
-      description: "Comprehensive LMS with course creation, student progress tracking, and interactive learning modules.",
-      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&h=300&fit=crop",
-      tags: ["Angular", "Spring Boot", "MySQL", "AWS"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Real Estate Platform",
-      description: "Property listing platform with advanced search, virtual tours, and agent management system.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop",
-      tags: ["Next.js", "GraphQL", "Prisma", "Cloudinary"],
-      liveUrl: "#",
-      githubUrl: "#"
-    }
+    
+   }
   ];
 
   return (
@@ -101,24 +87,7 @@ const PortfolioSection = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-3">
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="flex-1 group-hover:border-purple-600 group-hover:text-purple-600 transition-colors duration-300"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-1" />
-                    Live Demo
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="flex-1 group-hover:border-purple-600 group-hover:text-purple-600 transition-colors duration-300"
-                  >
-                    <Github className="h-4 w-4 mr-1" />
-                    Code
-                  </Button>
-                </div>
+               
               </CardContent>
             </Card>
           ))}

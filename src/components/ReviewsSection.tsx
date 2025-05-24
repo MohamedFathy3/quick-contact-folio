@@ -5,33 +5,27 @@ import { Card, CardContent } from "@/components/ui/card";
 const ReviewsSection = () => {
   const reviews = [
     {
-      name: "Sarah Johnson",
+      name: "mohamed ali",
       company: "Tech Startup Inc.",
-      rating: 5,
+      rating: 4,
       review: "Outstanding work! The website exceeded our expectations. Professional, responsive, and delivered on time.",
       avatar: "SJ"
     },
     {
-      name: "Michael Chen",
+      name: " ali ahmed",
       company: "E-commerce Solutions",
       rating: 5,
       review: "Excellent developer with great attention to detail. The mobile app works flawlessly across all platforms.",
       avatar: "MC"
     },
     {
-      name: "Emma Davis",
+      name: "Nour Sayed",
       company: "Digital Agency",
       rating: 5,
       review: "Highly skilled and reliable. Great communication throughout the project. Will definitely work together again.",
       avatar: "ED"
-    },
-    {
-      name: "David Wilson",
-      company: "Local Business",
-      rating: 5,
-      review: "Transformed our online presence completely. The new website has increased our customer engagement significantly.",
-      avatar: "DW"
     }
+   
   ];
 
   return (

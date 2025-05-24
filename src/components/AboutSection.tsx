@@ -10,7 +10,7 @@ const AboutSection = () => {
 
   const stats = [
     { number: "50+", label: "Projects Completed" },
-    { number: "3+", label: "Years Experience" },
+    { number: "4+", label: "Years Experience" },
     { number: "25+", label: "Happy Clients" },
     { number: "1000+", label: "Cups of Coffee" }
   ];
@@ -36,7 +36,7 @@ const AboutSection = () => {
                 My Story
               </h3>
               <p className="text-gray-300 leading-relaxed mb-4">
-                I'm a passionate full-stack developer with over 3 years of experience creating 
+                I'm a passionate full-stack developer with over 4 years of experience creating 
                 digital solutions that make a difference. My journey began with curiosity about 
                 how websites work, and it has evolved into a deep love for crafting elegant, 
                 efficient code.
