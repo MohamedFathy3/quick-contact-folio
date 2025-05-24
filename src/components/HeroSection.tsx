@@ -1,76 +1,104 @@
 
-import { Download, ChevronDown } from "lucide-react";
+import { Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   const handleDownloadCV = () => {
-    // You can replace this with your actual CV file path
-    const cvUrl = "/path-to-your-cv.pdf";
+    // Create a dummy CV download - replace with actual CV file
     const link = document.createElement('a');
-    link.href = cvUrl;
-    link.download = "Programmer_CV.pdf";
+    link.href = '#'; // Replace with actual CV file path
+    link.download = 'Your_Name_CV.pdf';
     link.click();
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
-      </div>
-
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
-          {/* Profile Image */}
-          <div className="mb-8 relative">
-            <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-purple-400 to-blue-500 p-1 animate-scale-in">
-              <div className="w-full h-full rounded-full bg-gray-300 flex items-center justify-center text-6xl font-bold text-gray-600 overflow-hidden">
-                {/* Replace this with your actual image */}
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
-                  alt="Profile" 
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </div>
+    <section className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center pt-16">
+      <div className="container mx-auto px-6 py-20">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+          {/* Left Content */}
+          <div className="flex-1 text-center lg:text-left space-y-8 animate-fade-in">
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-800 leading-tight">
+                Hi, I'm{" "}
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent animate-pulse">
+                  Your Name
+                </span>
+              </h1>
+              <p className="text-2xl md:text-3xl text-gray-600 font-light">
+                Full Stack Developer
+              </p>
+              <p className="text-lg text-gray-600 max-w-2xl">
+                Passionate about creating innovative digital solutions that make a difference. 
+                I specialize in modern web technologies and love turning complex problems into 
+                simple, beautiful designs.
+              </p>
             </div>
-            {/* Floating animation rings */}
-            <div className="absolute inset-0 rounded-full border-2 border-purple-400 animate-ping opacity-20"></div>
-            <div className="absolute inset-4 rounded-full border-2 border-blue-400 animate-ping opacity-30 animation-delay-1000"></div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Button 
+                onClick={handleDownloadCV}
+                className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-6 text-lg font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download CV
+              </Button>
+              <Button 
+                variant="outline" 
+                className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300"
+              >
+                <Mail className="mr-2 h-5 w-5" />
+                Let's Talk
+              </Button>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex gap-6 justify-center lg:justify-start">
+              <a 
+                href="#" 
+                className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl hover:scale-110 transition-all duration-300 group"
+              >
+                <Github className="h-6 w-6 text-gray-700 group-hover:text-purple-600" />
+              </a>
+              <a 
+                href="#" 
+                className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl hover:scale-110 transition-all duration-300 group"
+              >
+                <Linkedin className="h-6 w-6 text-gray-700 group-hover:text-blue-600" />
+              </a>
+              <a 
+                href="#" 
+                className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl hover:scale-110 transition-all duration-300 group"
+              >
+                <Mail className="h-6 w-6 text-gray-700 group-hover:text-green-600" />
+              </a>
+            </div>
           </div>
 
-          {/* Name with typing animation effect */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in">
-            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent">
-              Your Name
-            </span>
-          </h1>
+          {/* Right Content - Profile Image */}
+          <div className="flex-1 flex justify-center lg:justify-end animate-scale-in animation-delay-500">
+            <div className="relative">
+              {/* Decorative background */}
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full transform rotate-6 scale-105 opacity-20"></div>
+              <div className="absolute inset-0 bg-gradient-to-l from-blue-600 to-indigo-600 rounded-full transform -rotate-6 scale-105 opacity-20 animation-delay-1000"></div>
+              
+              {/* Profile Image Container */}
+              <div className="relative w-80 h-80 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full p-2 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+                <div className="w-full h-full bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
+                  {/* Placeholder for profile image */}
+                  <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 rounded-full flex items-center justify-center">
+                    <span className="text-6xl font-bold text-white">YN</span>
+                  </div>
+                  {/* Replace the div above with actual image when available */}
+                  {/* <img src="/path-to-your-image.jpg" alt="Your Name" className="w-full h-full object-cover rounded-full" /> */}
+                </div>
+              </div>
 
-          {/* Subtitle with animation */}
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in animation-delay-500">
-            Full Stack Developer & Problem Solver
-          </p>
-
-          {/* Animated description */}
-          <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in animation-delay-1000">
-            Crafting digital experiences with modern technologies. 
-            Passionate about clean code, innovative solutions, and bringing ideas to life.
-          </p>
-
-          {/* Download CV Button */}
-          <Button 
-            onClick={handleDownloadCV}
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg animate-fade-in animation-delay-1500"
-          >
-            <Download className="mr-2 h-5 w-5" />
-            Download CV
-          </Button>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="h-8 w-8 text-white opacity-60" />
+              {/* Floating elements */}
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-yellow-400 rounded-full opacity-80 animate-bounce animation-delay-2000"></div>
+              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-pink-400 rounded-full opacity-80 animate-bounce animation-delay-4000"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
